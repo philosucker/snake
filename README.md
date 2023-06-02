@@ -21,7 +21,22 @@
 ```
 - [O] 코드 작성자가 코드를 제대로 이해하고 작성했나요?
 ```
-네. 게임이 진행되는 부분 외에 시각적으로 표현하기 위해 turtle을 사용하신 부분이 인상깊었습니다.
+네. 게임이 진행되는 부분 외에 시각적으로 표현하기 위해 turtle을 사용하는 부분이 인상깊었습니다.
+
+def turtle_move(user, pos):
+   a = turtle.Turtle()
+   a.goto(self.pos%10, self.pos//10)
+    
+# 게임판 생성
+board = turtle.Screen()
+board.setup(width=500, height=500)
+
+# 플레이어 객체 생성
+players = []
+for i in range(4):
+  player = turtle.Turtle()
+  player.name = chr(ord('A') + i)
+  players.append(player)
 ```
 - [O] 코드가 간결한가요?
 ```
